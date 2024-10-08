@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">FaceLook</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="messages.html">Messages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Groups.html">Groups</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-3">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <button class="btn btn-outline-secondary d-md-none mt-3 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar" aria-controls="offcanvasSidebar">
+        more
+    </button>
+
+    <div class="offcanvas offcanvas-start bg-light text-dark" tabindex="-1" id="offcanvasSidebar" aria-labelledby="offcanvasSidebarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasSidebarLabel">more</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Friends</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Groups</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Events</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Marketplace</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Videos</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Memories</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Saved</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Feeds</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Reels</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Games</a>
+            </div>
+            <hr>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Posts</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Images</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Chats</a>
+                </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-md-3 d-none d-md-block">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Friends</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Groups</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Events</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Marketplace</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Videos</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Memories</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Saved</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Feeds</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Reels</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Games</a>
+                </div>
+                <hr>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Posts</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Images</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Chats</a>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="story-section">
+                    <a href="#" class="story unseen">
+                        <img src="https://www.newshub.co.nz/home/technology/2022/07/twitter-hires-specialists-to-sue-elon-musk-as-users-savage-billionaire/_jcr_content/par/image.dynimg.full.q75.jpg" alt="User 1">
+                        <span class="user-name">Elon Musk</span>
+                    </a>
+                    <a href="#" class="story unseen">
+                        <img src="https://pbs.twimg.com/profile_images/1674815862879178752/nTGMV1Eo_400x400.jpg" alt="User 2">
+                        <span class="user-name">Bill Gates</span>
+                    </a>
+                    <a href="#" class="story">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Nora-Fatehi-snapped-in-Bandra-2_%28cropped%29.jpg/220px-Nora-Fatehi-snapped-in-Bandra-2_%28cropped%29.jpg" alt="User 3">
+                        <span class="user-name">Nora</span>
+                    </a>
+                    <a href="#" class="story">
+                        <img src="https://m.media-amazon.com/images/I/71JpPdKSEAL._AC_UY1100_.jpg" alt="User 4">
+                        <span class="user-name">Tony Stark</span>
+                    </a>                     
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <form id="postForm">
+                            <textarea class="form-control" placeholder="What's on your mind?" id="postContent" rows="3"></textarea>
+                            <button type="button" class="btn btn-primary btn-post mt-2" onclick="createPost()">Post</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="postList">
+                    <div class="card mb-4">
+                        <!--<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" class="card-img-top post-img" alt="Post Image">-->
+                        <div class="card-body">
+                            <h5 class="card-title">Christopher Nolan</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, necessitatibus. Sit totam nam repellendus error ad itaque in saepe vero, earum, obcaecati iste, nemo quis aspernatur odit distinctio! Error, vitae?</p>
+                            <button class="btn btn-outline-primary">Like</button>
+                            <button class="btn btn-outline-secondary">Comment</button>
+                            <button class="btn btn-outline-danger" onclick="removePost(this)">Remove</button>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <!--<img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac"class="card-img-top post-img" alt="Post Image">-->
+                        <div class="card-body">
+                            <h5 class="card-title">Tom Holland</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolorem odio placeat autem praesentium quam alias neque nemo perferendis blanditiis porro, aperiam illum voluptatum dicta pariatur corporis, cumque sed natus.</p>
+                            <button class="btn btn-outline-primary">Like</button>
+                            <button class="btn btn-outline-secondary">Comment</button>
+                            <button class="btn btn-outline-danger" onclick="removePost(this)">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 d-none d-md-block">
+                <h5>Online Friends</h5>
+                <div class="online-friends mb-4">
+                    <img src="https://www.newshub.co.nz/home/technology/2022/07/twitter-hires-specialists-to-sue-elon-musk-as-users-savage-billionaire/_jcr_content/par/image.dynimg.full.q75.jpg" alt="Friend 1">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Nora-Fatehi-snapped-in-Bandra-2_%28cropped%29.jpg/220px-Nora-Fatehi-snapped-in-Bandra-2_%28cropped%29.jpg" alt="Friend 2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/1200px-Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg" alt="Friend 3">
+                    <img src="https://pbs.twimg.com/profile_images/1674815862879178752/nTGMV1Eo_400x400.jpg" alt="Friend 4">
+                </div>
+                <h5>Contacts</h5>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Elon Musk</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Bill Gates</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Tony Stark</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Nora Fatehi</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Ram</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Shyam</a>
+                    
+                </div>
+                <hr>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Edit Profile</a>
+                        <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Personal Info</a>
+                        <a href="#" class="list-group-item list-group-item-action bg-light text-primary">History</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function createPost() {
+            const postContent = document.getElementById('postContent').value;
+            if (!postContent) {
+                alert('Please enter some content for your post.');
+                return;
+            }
+
+            const postList = document.getElementById('postList');
+
+            const newPost = document.createElement('div');
+            newPost.className = 'card mb-4';
+            newPost.innerHTML = `
+                <div class="card-body">
+                    <h5 class="card-title">Shikhar Adhikari</h5>
+                    <p class="card-text">${postContent}</p>
+                    <button class="btn btn-outline-primary">Like</button>
+                    <button class="btn btn-outline-secondary">Comment</button>
+                    <button class="btn btn-outline-danger" onclick="removePost(this)">Remove</button>
+                </div>
+            `;
+            postList.prepend(newPost);
+
+            document.getElementById('postContent').value = ''; // Clear textarea
+        }
+
+        function removePost(button) {
+            const post = button.closest('.card');
+            post.remove();
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
