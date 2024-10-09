@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Media</title>
+    <title>Facelook</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">FaceLook</a>
+            <strong><a class="navbar-brand" href="#">FaceLook</a></strong>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,7 +32,7 @@
                 </ul>
                 <form class="d-flex ms-3">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                    <button class="btn btn-outline-light" type="submit">Search</button>
                 </form>
             </div>
         </div>
@@ -143,6 +143,26 @@
                             <button class="btn btn-outline-danger" onclick="removePost(this)">Remove</button>
                         </div>
                     </div>
+                    <div class="card mb-4">
+                        <!--<img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac"class="card-img-top post-img" alt="Post Image">-->
+                        <div class="card-body">
+                            <h5 class="card-title">Elon Musk</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolorem odio placeat autem praesentium quam alias neque nemo perferendis blanditiis porro, aperiam illum voluptatum dicta pariatur corporis, cumque sed natus.</p>
+                            <button class="btn btn-outline-primary">Like</button>
+                            <button class="btn btn-outline-secondary">Comment</button>
+                            <button class="btn btn-outline-danger" onclick="removePost(this)">Remove</button>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <!--<img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac"class="card-img-top post-img" alt="Post Image">-->
+                        <div class="card-body">
+                            <h5 class="card-title">Bill Gates</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolorem odio placeat autem praesentium quam alias neque nemo perferendis blanditiis porro, aperiam illum voluptatum dicta pariatur corporis, cumque sed natus.</p>
+                            <button class="btn btn-outline-primary">Like</button>
+                            <button class="btn btn-outline-secondary">Comment</button>
+                            <button class="btn btn-outline-danger" onclick="removePost(this)">Remove</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -165,6 +185,7 @@
                     
                 </div>
                 <hr>
+                <h5>Private</h5>
                     <div class="list-group">
                         <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Edit Profile</a>
                         <a href="#" class="list-group-item list-group-item-action bg-light text-primary">Personal Info</a>
@@ -197,9 +218,9 @@
             `;
             postList.prepend(newPost);
 
-            document.getElementById('postContent').value = ''; // Clear textarea
+            document.getElementById('postContent').value = '';
         }
-
+        
         function removePost(button) {
             const post = button.closest('.card');
             post.remove();

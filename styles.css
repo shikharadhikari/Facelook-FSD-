@@ -63,7 +63,7 @@ body {
 .card {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #cfdaf2;
+    background-color: #dbe3f5;
 }
 
 .card img {
@@ -96,9 +96,5 @@ body {
     border-radius: 20px;
 } 
 .offcanvas {
-    background-color: #cfdaf2;
-}
-
-.card-body {
     background-color: #cfdaf2;
 }
