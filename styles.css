@@ -98,3 +98,11 @@ body {
 .offcanvas {
     background-color: #cfdaf2;
 }
+
+.profilee{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
