@@ -28,16 +28,21 @@ pipeline {
         }
 
         stage('Deploy Facelook') {
-            steps {
-                sh '''
-                    set -eu
-                    rsync -av --delete \
-                        --exclude='.git/' \
-                        --exclude='Jenkinsfile' \
-                        ./ /var/www/website-two/
-                '''
-            }
-        }
+    steps {
+        sh '''
+            set -eu
+
+            rsync -rv --delete \
+                --no-perms \
+                --no-owner \
+                --no-group \
+                --omit-dir-times \
+                --exclude='.git/' \
+                --exclude='Jenkinsfile' \
+                ./ /var/www/website-two/
+        '''
+    }
+}
 
         stage('Verify') {
             steps {
